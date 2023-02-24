@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-              docker build . --tag ghcr.io/ArianFotouhi/store:latest
-              docker push ghcr.io/ArianFotouhi/store:latest
+              docker build . --tag ghcr.io/arianfotouhi/store:latest
+              docker push ghcr.io/arianfotouhi/store:latest
