@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='Scholar.css')}}">
+
+<script src="https://kit.fontawesome.com/7b39c73889.js" crossorigin="anonymous"></script>
+<link rel="icon" href="{{url_for('static', filename='favicon2.ico')}}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Arian Fotouhi</title>
+
+</head>
+
+<body>
+
+
+    <section id="sec1">
+
+
+
+      <form method="POST" enctype='multipart/form-data'>
+        <div class="form-group">
+        <h5>Image classifier API</h5>
+        <input type="file" accept=".png, .jpeg, .jpg" class="form-control-file" name="file" id="exampleFormControlFile1">
+        </div>
+        <!-- <input name="height" class="text_box" placeholder="Height">
+        <input name="weight" class="text_box" placeholder="Weight">
+        <input name="blood_pressure" class="text_box" placeholder="Blood Pressure"> -->
+        <!-- <input type = "password" class="text_box" name="data_password" placeholder="Data access password">
+        <input type = "password" class="text_box" name="password" placeholder="Password"> -->
+
+        <input type="submit" class="btn btn-dark" value="Submit">
+
+      </form>
+
+
+<hr>
+<h6 style="text-align:left">After uploading the image (jpg/png format) click the submit button please.</h6>
+{%if message%}
+<p>{{message}}</p>
+{% endif %}
+
+    </section>
+
+  </section>
+
+  <section id="sec-copyright">
+    <p>Fülhaus</p>
+    
+    <hr>
+    <i class="far fa-copyright"> Arian Fotouhi 2023</i>
+  </section>
+
+
+</body>
+
+</html>
