@@ -1,20 +1,17 @@
-name: Docker Image CI
-
+name: Build Docker Image
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    branches:
+      - main
 jobs:
-
-  build-then-push:
-
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: |
-              docker build . --tag ghcr.io/arianfotouhi/store:latest
-              docker push ghcr.io/arianfotouhi/store:latest
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        push: true
+        tags: arianfotouhi/classfierapi:latest
