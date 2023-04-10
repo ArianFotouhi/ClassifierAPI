@@ -24,22 +24,18 @@
 
       <form method="POST" enctype='multipart/form-data'>
         <div class="form-group">
-        <h5>Image classifier API</h5>
+        <h5>Furniture image classifier</h5>
         <input type="file" accept=".png, .jpeg, .jpg" class="form-control-file" name="file" id="exampleFormControlFile1">
         </div>
-        <!-- <input name="height" class="text_box" placeholder="Height">
-        <input name="weight" class="text_box" placeholder="Weight">
-        <input name="blood_pressure" class="text_box" placeholder="Blood Pressure"> -->
-        <!-- <input type = "password" class="text_box" name="data_password" placeholder="Data access password">
-        <input type = "password" class="text_box" name="password" placeholder="Password"> -->
-
+      
         <input type="submit" class="btn btn-dark" value="Submit">
 
       </form>
 
 
 <hr>
-<h6 style="text-align:left">After uploading the image (jpg/png format) click the submit button please.</h6>
+<h6 style="text-align:left">This application classifies chair, sofa and bed images (jpg/png)</h6>
+
 {%if message%}
 <p>{{message}}</p>
 {% endif %}
@@ -49,8 +45,8 @@
   </section>
 
   <section id="sec-copyright">
-    <p>Fülhaus</p>
-    
+    <p></p>
+
     <hr>
     <i class="far fa-copyright"> Arian Fotouhi 2023</i>
   </section>
