@@ -6,4 +6,4 @@ Considering API building, I made API.py along with html and css files (in templa
 
 Furthermore, I appended a Dockerfile with aim of building a docker image. Respecting the docker file, it utilizes the requirements.txt file to provide the program dependencies, as it runs the pip install command. besides, it runs the application by CMD. 
 
-Last but not least, the action section of this GitHub repository is depicting a docker based workflow in which, as described in docker-image.yml, the workflow builds the docker image of the program. 
+Last but not least, the action section of this GitHub repository is depicting a docker based workflow in which, as described in docker-image.yml, the workflow builds the docker image of the program then push it to the dockerhub account everytime based on CICD pipeline. 
