@@ -17,5 +17,5 @@ jobs:
     - name: Build and Push the Docker image
       run: |
         echo "${{secrets.DOCKER_HUB_PASSWORD}}" | docker login -u "${{secrets.DOCKER_HUB_USERNAME}}" --password-stdin
-        docker image build -t arianfotouhi/classfierapi:v1  .
-        docker push arianfotouhi/classfierapi:v1
+        docker image build -t arianfotouhi/furniture_clf:v1  .
+        docker push arianfotouhi/furniture_clf:v1
